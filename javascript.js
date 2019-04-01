@@ -14,12 +14,13 @@ for (i = 0; i< month.length; i++)
 console.log(_.pad(day, 8))
 console.log(_.chunk(days, 7));};
 
-const range = moment().range('2019-01-01', '2019-12-31');
-for (let month of range.by('month')) {
-    month.format('MM');
-}
-const months = Array.from(range.by('month'));
-months.length == 6 // true
-months.map(m => m.format('MMMM'))
-
+// const range = moment().range('2019-01-01', '2019-12-31');
+// for (let month of range.by('month')) {
+//     month.format('MM');
+// }
+// const months = Array.from(range.by('month'));
+// months.length == 6 // true
+// months.map(m => m.format('MMMM'))
+//Above: Should print months like moment states. 
+//Does not recognize moment().range()
 
